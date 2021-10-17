@@ -15,5 +15,11 @@ class String_Calculator_Test {
 		assertEquals(0,cal.add(""));
 	}
 	
+	@Test
+	void test_singleNumber() {
+		assertEquals(1,cal.add("1"));
+	}
+	
+	
 
 }

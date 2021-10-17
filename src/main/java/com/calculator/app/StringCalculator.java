@@ -4,6 +4,7 @@ public class StringCalculator {
 
 	public int add(String input)
 	{
-		return 0;
+		Calculator cal =new Calculator(input);
+		return cal.add();
 	}
 }
