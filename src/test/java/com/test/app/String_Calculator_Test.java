@@ -42,8 +42,27 @@ class String_Calculator_Test {
 	
 	@Test
 	void test_3_number_withnewline() {
-		assertEquals(12,cal.add("2\n4,6"));
+		assertEquals(12,cal.add("2\n4\n6"));
 	}
+	
+	
+	@Test
+	void negativenumber_test1() {
+		cal.add("-2,1");
+	}
+	
+	@Test
+	void negativenumber_test2() {
+		cal.add("-2,-1");
+	}
+	
+	@Test
+	void negativenumber_test3() {
+		cal.add("-2,-1,-11");
+	}
+	
+	
+	
 	
 	
 
