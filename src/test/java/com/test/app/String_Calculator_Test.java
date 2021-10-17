@@ -76,6 +76,25 @@ class String_Calculator_Test {
 		assertEquals(2,cal.add("1004,1002,2"));
 	}
 	
+	@Test
+	void different_Delimiter_Test1() {
+		assertEquals(3,cal.add("//[x]\n2x1"));
+	}
+	
+	@Test
+	void different_Delimiter_Test2() {
+		assertEquals(4,cal.add("//[x][y]\n2x1y1"));
+	}
+	
+	@Test
+	void different_Delimiter_Test3() {
+		assertEquals(4,cal.add("//[xx][yy]\n2xx1yy1"));
+	}
+	
+	@Test
+	void different_Delimiter_Test4() {
+		assertEquals(4,cal.add("//[xx][%]\n2xx1%1"));
+	}
 	
 	
 	
