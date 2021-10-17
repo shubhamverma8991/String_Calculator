@@ -36,6 +36,11 @@ class String_Calculator_Test {
 	}
 	
 	@Test
+	void test_3_number_withnewline_andcomma() {
+		assertEquals(12,cal.add("2\n4,6"));
+	}
+	
+	@Test
 	void test_3_number_withnewline() {
 		assertEquals(12,cal.add("2\n4,6"));
 	}
