@@ -20,6 +20,26 @@ class String_Calculator_Test {
 		assertEquals(1,cal.add("1"));
 	}
 	
+	@Test
+	void test_singleNumber_2() {
+		assertEquals(2,cal.add("2"));
+	}
+	
+	@Test
+	void test_twonumber() {
+		assertEquals(5,cal.add("2,3"));
+	}
+	
+	@Test
+	void test_3_number() {
+		assertEquals(12,cal.add("2,4,6"));
+	}
+	
+	@Test
+	void test_3_number_withnewline() {
+		assertEquals(12,cal.add("2\n4,6"));
+	}
+	
 	
 
 }
